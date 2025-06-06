@@ -154,7 +154,8 @@ xmlns="http://www.w3.org/2000/svg"
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "scA0.toogles.login", "==", true ]]
  , trigger: 'on listen'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+}})],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -169,7 +170,7 @@ xmlns="http://www.w3.org/2000/svg"
 
           args,
 
-        }}/>],
+        }}/>, () => { return <RN.Text>Formulário Custom</RN.Text> }],
 
             args,
           }}/>
