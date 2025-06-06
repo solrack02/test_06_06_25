@@ -71,9 +71,9 @@
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
-        functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: ['noPath'],
-            arrFuncs: [()=>{}],
+        functions.setVar({ args, pass:{
+          keyPath: ['example.A1.lists.iptsChanges.name'],
+          value: ['no value']
         }})]
  , trigger: 'on init'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
