@@ -35,7 +35,7 @@ export const setVar = (props: Tprops_setVar) => {
     console.log('type:', typeValue);
     console.table('value:', value[0]);
 
-    const isFunction = typeof value[0];
+    const isFunction = typeof value[0] === "function";
     if (isFunction) {
       return setData({ path: url, value: value[0](args) });
     };
