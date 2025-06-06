@@ -153,7 +153,7 @@ xmlns="http://www.w3.org/2000/svg"
     setMensagemErro("");
     console.log("Login realizado com sucesso!");
 const path1 = "scA0.toogles.login";
-    const value = "false";
+    const value = false;
     const pass1 = { keyPath: [path1], value: [value] };
     tools.functions.setVar({ args: "", pass: pass1 });
   };
