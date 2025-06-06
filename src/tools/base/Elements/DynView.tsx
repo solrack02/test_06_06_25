@@ -139,7 +139,7 @@ export const DynView = (props: Tprops) => {
     const operatorFunc = operators[sttCondParts.operator];
     const condShow = operatorFunc?.(varValue, sttCondParts.compareVal);
 
-    console.log({ childrenItems });
+    console.log({ condShow, childrenItems });
 
     return (
       condShow && <View {...allProps}>{mapElements(childrenItems, args)}</View>
