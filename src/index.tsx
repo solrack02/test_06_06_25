@@ -158,6 +158,8 @@ const path1 = "scA0.toogles.login";
     tools.functions.setVar({ args: "", pass: pass1 });
   };
 
+console.log(tools.getCtData('scA0.toogles.login'))
+
   return (
     <RN.View
       style={{
