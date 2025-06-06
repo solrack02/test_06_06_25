@@ -274,7 +274,8 @@ const path1 = "scA0.toogles.login";
 
           const initCt = () => (
  {
- 'all': { 
+ 
+        'all': { 
 'colors': { 
 'primary': "#fff", 'secondary': "#0064fe" } 
 , 
@@ -297,6 +298,7 @@ const path1 = "scA0.toogles.login";
   messagingSenderId: "750912250366",
   appId: "1:750912250366:web:4629eac789a718a74220af"
 } } 
+, 'scA0': { 'toggles': { login: true } } 
  
 } 
  );
