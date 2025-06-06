@@ -230,6 +230,7 @@ console.log(tools.getCtData('scA0.toogles.login'))
     </RN.View>
   );
 }, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -263,6 +264,28 @@ console.log(tools.getCtData('scA0.toogles.login'))
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "scA0.toogles.login", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[() =><></>],
 
             args,
           }}/>
