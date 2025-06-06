@@ -170,7 +170,15 @@ xmlns="http://www.w3.org/2000/svg"
 
           args,
 
-        }}/>, () => { return <RN.Text>Formulário Custom</RN.Text> }],
+        }}/>, () => { 
+  const [userName, setUserName] = React.useState('');
+  const [userPassword, setUserPassword] = React.useState('');
+  const [mensagemErro, setMensagemErro] = React.useState('');
+
+
+
+return <RN.Text>Formulário Custom</RN.Text>
+ }],
 
             args,
           }}/>
