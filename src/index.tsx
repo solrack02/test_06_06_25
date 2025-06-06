@@ -215,7 +215,7 @@ xmlns="http://www.w3.org/2000/svg"
   const [userName, setUserName] = React.useState("");
   const [userPassword, setUserPassword] = React.useState("");
   const [mensagemErro, setMensagemErro] = React.useState("");
-const condXx = tools.useData(ct => console.log({ct}))
+const condXx = useData(ct => console.log({ct}))
   const handleLogin = () => {
     if (!userName.trim()) {
       setMensagemErro("O nome de usuário precisa ser preenchido.");
