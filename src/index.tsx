@@ -174,6 +174,7 @@ xmlns="http://www.w3.org/2000/svg"
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -191,7 +192,26 @@ xmlns="http://www.w3.org/2000/svg"
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "scA0.toogles.login", "==", true ]]
  , trigger: 'on listen'
-}})],            childrenItems:[() => {
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            "Escreva..."
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , () => {
   const [userName, setUserName] = React.useState("");
   const [userPassword, setUserPassword] = React.useState("");
   const [mensagemErro, setMensagemErro] = React.useState("");
@@ -285,10 +305,6 @@ console.log(tools.getCtData('scA0.toogles.login'))
     </RN.View>
   );
 }],
-
-            args,
-          }}/>
-        ],
 
           functions:[()=>{}],
 
