@@ -173,7 +173,10 @@ xmlns="http://www.w3.org/2000/svg"
         }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
+  arrItems: [() => {
+
+return <RN.Text>Element Default</RN.Text>
+}] 
 }}/>
 ],
 
