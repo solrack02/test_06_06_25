@@ -175,6 +175,8 @@ xmlns="http://www.w3.org/2000/svg"
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
 
+const [userName, setUserName] = React.useState("");
+
 return <RN.Text>Element Default</RN.Text>
 }] 
 }}/>
