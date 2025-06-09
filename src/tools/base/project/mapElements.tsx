@@ -8,9 +8,7 @@ export const mapElements = (list: Tlist, args?: any) => {
   const condCall = list.flatMap(i => i).length > 0;
   const renderList = () =>
     list.map((Item, idx) => {
-      console.log({ Item });
       return <React.Fragment key={idx}>{Item(args)}</React.Fragment>;
     });
   return condCall ? renderList() : <></>;
 };
-
