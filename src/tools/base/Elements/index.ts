@@ -8,3 +8,4 @@ export { Loader } from './Loader';
 export { IptTxtEdit } from './IptTxtEdit';
 export { ScrollBar } from './ScrollBar';
 export { SvgView1 } from './SvgView1'; // SVG da erro no webcontainer
+export { Custom } from './Custom';
